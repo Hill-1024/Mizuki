@@ -118,12 +118,9 @@ wget -O hy2.py https://raw.githubusercontent.com/seagullz4/hysteria2/main/hyster
 这样以后在连接上ssh后仅需输入hy2回车即可呼出脚本进行管理维护
 
 
-<font color="rgba(230, 26, 26, 0.87)">
-
-# 免责声明
-
-**笔者坚决维护中华人民共和国政府,坚持中国共产党的领导**\
-本教程仅供学术用途,请在获取后24小时内删除\
-如若有人将其投入不良用途,与本人**一概无关**
-
+# <font color="#dc143c"> 免责声明 </font>
+<font color="#dc143c">
+<h3 style="color: #dc143c">笔者坚决维护中华人民共和国政府,坚持中国共产党的领导</h3>
+本教程仅供学术用途,请在获取后24小时内删除<br>
+如若有人将其投入不良用途,与本人一概无关
 </font>
