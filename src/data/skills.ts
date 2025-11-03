@@ -34,7 +34,7 @@ export const skillsData: Skill[] = [
 		icon: "logos:astro-icon",
 		category: "frontend",
 		level: "beginner",
-		experience: { years: 0, months: 0.1 },
+		experience: { years: 0, months: 1 },
 		projects: [],
 		color: "#FF5D01",
 	},
