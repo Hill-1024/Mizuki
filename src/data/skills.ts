@@ -160,7 +160,17 @@ export const skillsData: Skill[] = [
 		projects: [],
 		color: "#21D789",
 	},
-
+    {
+        id: "rustrover",
+        name: "RustRover",
+        description: "",
+        icon: 'skill-icons:rust',
+        category: "tools",
+        level: "beginner",
+        experience: { years: 0, months: 2 },
+        projects: [],
+        color: "#FF5D01",
+    },
 	// Other Skills
 ];
 
