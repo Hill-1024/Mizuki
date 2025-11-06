@@ -77,7 +77,17 @@ export const skillsData: Skill[] = [
 		projects: [],
 		color: "#7F52FF",
 	},
-
+    {
+        id: "rust",
+        name: "Rust",
+        description: "",
+        icon: "logos:rust",
+        category: "backend",
+        level: "beginner",
+        experience: { years: 0, months: 2 },
+        projects: [],
+        color: "#FF5D01",
+    },
 
 	// Database Skills
 
@@ -131,7 +141,7 @@ export const skillsData: Skill[] = [
       id: "clion",
       name: "Clion",
       description: "",
-        icon: "logos:clion",
+        icon: "devicon:clion",
         category: "tools",
         level: "intermediate",
         experience:{years: 0, months: 4 },
@@ -150,7 +160,17 @@ export const skillsData: Skill[] = [
 		projects: [],
 		color: "#21D789",
 	},
-
+    {
+        id: "rustrover",
+        name: "RustRover",
+        description: "",
+        icon: "material-icon-theme:rust",
+        category: "tools",
+        level: "beginner",
+        experience: { years: 0, months: 2 },
+        projects: [],
+        color: "#FF5D01",
+    },
 	// Other Skills
 ];
 
