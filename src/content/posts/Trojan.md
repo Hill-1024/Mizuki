@@ -73,7 +73,7 @@ draft: false
     3. 宝宝级指南
        1. 按1回车->安装Trojan
        2. 输入你解析的域名并回车,例子:```www.example.com```
-       3. 输入```cat /usr/src/trojan-macos/trojan/config.json```查看配置，记住你的密码的端口
+       3. 输入```cat /usr/src/trojan-macos/trojan/config.json```查看配置，记住你的密码和端口
         
     
 
