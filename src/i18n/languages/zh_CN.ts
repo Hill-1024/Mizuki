@@ -44,6 +44,7 @@ export const zh_CN: Translation = {
 	[Key.license]: "许可协议",
 	[Key.anime]: "追番",
 	[Key.diary]: "随笔",
+	[Key.gallery]: "相册",
 
 	// 番剧页面
 	[Key.animeTitle]: "我的追番记录",
@@ -65,7 +66,7 @@ export const zh_CN: Translation = {
 	[Key.diaryCount]: "条短文",
 	[Key.diaryImage]: "图片",
 	[Key.diaryReply]: "回复",
-	[Key.diaryTips]: "只展示最近30条随笔",
+	[Key.diaryTips]: "只展示最近30条日记",
 	[Key.diaryMinutesAgo]: "分钟前",
 	[Key.diaryHoursAgo]: "小时前",
 	[Key.diaryDaysAgo]: "天前",

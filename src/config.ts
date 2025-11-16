@@ -18,12 +18,13 @@ import { LinkPreset } from "./types/config";
 
 // 定义站点语言
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
-const SITE_TIMEZONE =8;//设置你的网站时区 from -12 to 12 default in UTC+8
+const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Hill-Blog",
-	subtitle: "Powered by Mizuki",
+	title: "Mizuki",
+	subtitle: "One demo website",
+	siteURL: "https://blog.hill-q.com/", // 请替换为你的站点URL，以斜杠结尾
 
-    timeZone: SITE_TIMEZONE,
+	timeZone: SITE_TIMEZONE,
 
 	lang: SITE_LANG,
 
@@ -48,7 +49,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "Hill",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/Mutsumi.jpg",
+		icon: "assets/home/avatar.jpg",
 	},
 
 	bangumi: {
@@ -73,28 +74,38 @@ export const siteConfig: SiteConfig = {
 		useNewStyle: true,
 	},
 
-	banner: {
-		enable: true, // 是否启动Banner壁纸模式
+	// 壁纸模式配置
+	wallpaperMode: {
+		// 默认壁纸模式：banner=顶部横幅，fullscreen=全屏壁纸，none=无壁纸
+		defaultMode: "banner",
+		// 整体布局方案切换按钮显示设置（默认："desktop"）
+		// "off" = 不显示
+		// "mobile" = 仅在移动端显示
+		// "desktop" = 仅在桌面端显示
+		// "both" = 在所有设备上显示
+		showModeSwitchOnMobile: "desktop",
+	},
 
+	banner: {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/d1.png",
-				"/assets/desktop-banner/d2.jpg",
-				"/assets/desktop-banner/d3.jpg",
-				"/assets/desktop-banner/d4.jpg",
-				"/assets/desktop-banner/d5.jpg",
-				"/assets/desktop-banner/d6.jpg",
+                "/assets/desktop-banner/d1.png",
+                "/assets/desktop-banner/d2.jpg",
+                "/assets/desktop-banner/d3.jpg",
+                "/assets/desktop-banner/d4.jpg",
+                "/assets/desktop-banner/d5.jpg",
+                "/assets/desktop-banner/d6.jpg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/m1.webp",
-				"/assets/mobile-banner/m2.webp",
-				"/assets/mobile-banner/m3.webp",
-				"/assets/mobile-banner/m4.webp",
-				"/assets/mobile-banner/m5.webp",
-				"/assets/mobile-banner/m6.webp",
-				"/assets/mobile-banner/m7.webp",
-				"/assets/mobile-banner/m8.webp",
+                "/assets/mobile-banner/m1.webp",
+                "/assets/mobile-banner/m2.webp",
+                "/assets/mobile-banner/m3.webp",
+                "/assets/mobile-banner/m4.webp",
+                "/assets/mobile-banner/m5.webp",
+                "/assets/mobile-banner/m6.webp",
+                "/assets/mobile-banner/m7.webp",
+                "/assets/mobile-banner/m8.webp",
                 "/assets/mobile-banner/m9.webp",
                 "/assets/mobile-banner/m10.webp",
                 "/assets/mobile-banner/m11.webp",
@@ -129,8 +140,8 @@ export const siteConfig: SiteConfig = {
 			title: "Hill's Land", // 主页横幅主标题
 
 			subtitle: [
-				"Personal Blog Site",
-				"一个无聊的人的博客",
+                "Personal Blog Site",
+                "一个无聊的人的博客",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -151,19 +162,12 @@ export const siteConfig: SiteConfig = {
 		navbar: {
 			transparentMode: "semifull", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明，"semifull" 动态透明
 		},
-
-		// 整体布局方案切换按钮显示设置（默认："desktop"）
-		// "off" = 不显示
-		// "mobile" = 仅在移动端显示
-		// "desktop" = 仅在桌面端显示
-		// "both" = 在所有设备上显示
-		showModeSwitchOnMobile: "desktop",
 	},
 	toc: {
 		enable: true, // 启用目录功能
 		depth: 3, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
 	},
-	generateOgImages: true, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
+	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
 		// 留空以使用默认 favicon
 		// {
@@ -185,7 +189,6 @@ export const siteConfig: SiteConfig = {
 	showLastModified: true, // 控制“上次编辑”卡片显示的开关
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
-	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
 	src: {
 		desktop: [
             "/assets/desktop-banner/d1.png",
@@ -194,7 +197,6 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
             "/assets/desktop-banner/d4.jpg",
             "/assets/desktop-banner/d5.jpg",
             "/assets/desktop-banner/d6.jpg",
-
 		], // 桌面横幅图片
 		mobile: [
             "/assets/mobile-banner/m1.webp",
@@ -230,18 +232,18 @@ export const navBarConfig: NavBarConfig = {
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/hill-1024",
-					external: true,
-					icon: "fa6-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701935297",
-					external: true,
-					icon: "fa6-brands:bilibili",
-				},
+                {
+                    name: "GitHub",
+                    url: "https://github.com/hill-1024",
+                    external: true,
+                    icon: "fa6-brands:github",
+                },
+                {
+                    name: "Bilibili",
+                    url: "https://space.bilibili.com/701935297",
+                    external: true,
+                    icon: "fa6-brands:bilibili",
+                },
                 {
                     name: "洛谷",
                     url: "https://www.luogu.com.cn/user/816033",
@@ -303,25 +305,25 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/Mutsumi.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Hill",
-	bio: "Just Forward",
+    avatar: "assets/images/avatar.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+    name: "Hill",
+    bio: "Just Forward",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
-		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701935297",
-		},
+        {
+            name: "Bilibli",
+            icon: "fa6-brands:bilibili",
+            url: "https://space.bilibili.com/701935297",
+        },
 
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/hill-1024",
-		},
+        {
+            name: "GitHub",
+            icon: "fa6-brands:github",
+            url: "https://github.com/hill-1024",
+        },
         {
             name: "洛谷",
             icon: "simple-icons:luogu",
@@ -348,10 +350,10 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
-		lang: "Zh-CN", // 设置 Twikoo 评论系统语言为英文
+		lang: "en", // 设置 Twikoo 评论系统语言为英文
 	},
 };
 
@@ -372,7 +374,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 };
 
 export const footerConfig: FooterConfig = {
-	enable: true, // 是否启用Footer HTML注入功能
+	enable: false, // 是否启用Footer HTML注入功能
 };
 
 // 直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
@@ -474,8 +476,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		breakpoints: {
 			// 移动端断点：屏幕宽度小于768px
 			mobile: 768,
-			// 平板端断点：屏幕宽度小于1024px
-			tablet: 1024,
+			// 平板端断点：屏幕宽度小于1280px
+			tablet: 1280,
 			// 桌面端断点：屏幕宽度小于1280px
 			desktop: 1280,
 		},
@@ -529,7 +531,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Hill's Land", // 欢迎词
+		welcome: "Welcome to Mizuki Website!", // 欢迎词
 		touch: [
 			"What are you doing?",
 			"Stop touching me!",

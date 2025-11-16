@@ -15,8 +15,8 @@ import { i18n } from "../../i18n/translation";
 let mode = musicPlayerConfig.mode ?? "meting";
 // Meting API 地址，从配置中获取或使用默认地址(bilibili.uno(由哔哩哔哩松坂有希公益管理)),服务器在海外,部分音乐平台可能不支持并且速度可能慢,也可以自建Meting API
 let meting_api =
-	musicPlayerConfig.meting_api ??
-	"https://api.qijieya.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r";
+    musicPlayerConfig.meting_api ??
+    "https://api.qijieya.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r";
 // Meting API 的 ID，从配置中获取或使用默认值
 let meting_id = musicPlayerConfig.id ?? "17404271289";
 // Meting API 的服务器，从配置中获取或使用默认值,有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
@@ -66,7 +66,30 @@ let progressBar: HTMLElement;
 let volumeBar: HTMLElement;
 
 const localPlaylist = [
-	
+	{
+		id: 1,
+		title: "ひとり上手",
+		artist: "Kaya",
+		cover: "assets/music/cover/hitori.jpg",
+		url: "assets/music/url/hitori.mp3",
+		duration: 240,
+	},
+	{
+		id: 2,
+		title: "眩耀夜行",
+		artist: "スリーズブーケ",
+		cover: "assets/music/cover/xryx.jpg",
+		url: "assets/music/url/xryx.mp3",
+		duration: 180,
+	},
+	{
+		id: 3,
+		title: "春雷の頃",
+		artist: "22/7",
+		cover: "assets/music/cover/cl.jpg",
+		url: "assets/music/url/cl.mp3",
+		duration: 200,
+	},
 ];
 
 async function fetchMetingPlaylist() {

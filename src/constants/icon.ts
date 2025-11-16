@@ -42,10 +42,3 @@ export const defaultFavicons: Favicon[] = [
 		sizes: "192x192",
 	},
 ];
-export const iconMap = {
-    // 现有图标...
-
-    // 添加新图标
-    //'自定义名称': 'icon-library:icon-name'
-
-};
