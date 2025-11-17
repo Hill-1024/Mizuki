@@ -64,7 +64,7 @@ export const zh_CN: Translation = {
 	// 短文页面
 	[Key.diarySubtitle]: "随时随地，分享生活",
 	[Key.diaryCount]: "条短文",
-	[Key.diaryImage]: "图片",
+
 	[Key.diaryReply]: "回复",
 	[Key.diaryTips]: "只展示最近30条日记",
 	[Key.diaryMinutesAgo]: "分钟前",

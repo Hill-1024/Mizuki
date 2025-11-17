@@ -66,7 +66,7 @@ export const en: Translation = {
 	// Diary Page
 	[Key.diarySubtitle]: "Share life anytime, anywhere",
 	[Key.diaryCount]: "diary entries",
-	[Key.diaryImage]: "Image",
+
 	[Key.diaryReply]: "Reply",
 	[Key.diaryTips]: "Only show the latest 30 diary entries",
 	[Key.diaryMinutesAgo]: "minutes ago",
