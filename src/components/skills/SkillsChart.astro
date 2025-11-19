@@ -274,8 +274,9 @@ const calculatePercentage = (value: number, total: number) => {
               <span class="text-black/70 dark:text-white/70 font-medium">{actualPercentage}%</span>
             </div>
             <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
-              <div class="h-3 rounded-full transition-all duration-300"
-                   style={`width: ${percentage}%; background-color: ${item.color};`}
+              <div 
+                class="h-3 rounded-full transition-all duration-300"
+                style={`width: ${percentage}%; background-color: ${item.color};`}
               ></div>
             </div>
           </div>
