@@ -30,7 +30,7 @@ export const devicesData: DeviceCategory = {
             name: "Zephyrus G14 2025",
             image: "/images/device/Zephyrus.png",
             specs: "Ryzen AI 9 HX 370 White / 32GB + 1TB",
-            description: "",
+            description: "Performance, Uncompromised.",
             link: "https://rog.asus.com.cn/laptops/rog-zephyrus/rog-zephyrus-g14-2025/",
         },
     ],
