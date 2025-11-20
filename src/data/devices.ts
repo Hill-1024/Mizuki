@@ -21,7 +21,7 @@ export const devicesData: DeviceCategory = {
             name: "OnePlus 12",
             image: "/images/device/oneplus12.jpg",
             specs: "Snapdragon 8gen3 Black / 16GB + 512GB",
-            description: "Never Settle",
+            description: "Never Settle.",
             link: "https://www.oneplus.com/cn/12",
         },
     ],
@@ -34,6 +34,13 @@ export const devicesData: DeviceCategory = {
             link: "https://rog.asus.com.cn/laptops/rog-zephyrus/rog-zephyrus-g14-2025/",
         },
     ],
-
-
+    Apple: [
+        {
+            name: "MacBook Air 13 2020",
+            image: "/images/device/MBA-M1.jpg",
+            specs: "M1 Black / 8GB + 256GB",
+            description: "Speed of lightness.",
+            link: "https://www.apple.com.cn/macbook-air/",
+        },
+    ],
 };
