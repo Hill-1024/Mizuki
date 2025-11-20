@@ -26,6 +26,12 @@ const diaryData: DiaryItem[] = [
         date: "2025-11-07T15:25:00Z",//07T15.25
         images: ["https://i0.hdslb.com/bfs/new_dyn/b889e1b030342792f13856de1c371bff186510120.jpg@1192w.avif"],
     },
+    {
+        id: 3,
+        content: "小冷的天气",
+        date: "2025-11-20T10:37:00Z",
+        images: ["/images/diary/cold.jpg"],
+    }
 ];
 /*
 
