@@ -24,7 +24,7 @@ const diaryData: DiaryItem[] = [
         id: 2,
         content: "归家,然后去找高中动漫社小登",
         date: "2025-11-07T15:25:00Z",//07T15.25
-        images: ["https://i0.hdslb.com/bfs/new_dyn/b889e1b030342792f13856de1c371bff186510120.jpg@1192w.avif"],
+        images: ["https://i0.hdslb.com/bfs/new_dyn/b889e1b030342792f13856de1c371bff186510120.jpg"],
     },
     {
         id: 3,
