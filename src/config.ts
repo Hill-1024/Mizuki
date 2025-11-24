@@ -271,6 +271,12 @@ export const navBarConfig: NavBarConfig = {
                     external: true,
                     icon: "simple-icons:codeforces",
                 },
+                {
+                    name: "AtCoder",
+                    url: "https://atcoder.jp/users/HillQ",
+                    external: true,
+                    icon: "material-symbols:code-blocks",
+                },
             ],
         },
         {
@@ -372,6 +378,11 @@ export const profileConfig: ProfileConfig = {
             name: "CodeForces",
             icon: "simple-icons:codeforces",
             url: "https://codeforces.com/profile/Hill-Q",
+        },
+        {
+            name: "AtCoder",
+            icon: "material-symbols:code-blocks",
+            url: "https://atcoder.jp/users/HillQ",
         },
     ],
 };

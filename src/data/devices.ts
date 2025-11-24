@@ -38,7 +38,7 @@ export const devicesData: DeviceCategory = {
         {
             name: "MacBook Air 13 2020",
             image: "/images/device/MBA-M1.jpg",
-            specs: "M1 Black / 8GB + 256GB",
+            specs: "Apple Silicon M1 Black / 8GB + 256GB",
             description: "Speed of lightness.",
             link: "https://www.apple.com.cn/macbook-air/",
         },
