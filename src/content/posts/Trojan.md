@@ -44,6 +44,10 @@ draft: false
 
 以及，我们Trojan需要一个域名，请寻找合适的服务商购买
 
+* [CloudFlare](https://domains.cloudflare.com/zh-cn)
+* [GoDaddy](https://www.godaddy.com/zh)
+* [PorkBun](https://porkbun.com/)
+
 ## 操作篇
 
 在购买完成后,你会看到你的服务器IP地址
