@@ -43,4 +43,36 @@ export const devicesData: DeviceCategory = {
             link: "https://www.apple.com.cn/macbook-air/",
         },
     ],
+    Microsoft: [
+        {
+            name: "Surface Pro 4",
+            image: "https://tse4-mm.cn.bing.net/th/id/OIP-C.EMZOiods9cM0QuVsqAXlKAHaE7?w=266&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
+            specs: "16GB + 256GB",
+            description: "The Original Hybrid.",
+            link: "https://support.microsoft.com/zh-cn/surface/surface-pro-4-%E8%A7%84%E6%A0%BC%E5%92%8C%E5%8A%9F%E8%83%BD-e3a8ac71-4cee-9107-23bc-7bd08d47cf75",
+        },
+    ],
+    MOONDROP: [
+        {
+            name: "Qurak2 MuseDash",
+            image: "/images/device/Quark2.avif",
+            specs: "7.8mm 动圈单元",
+            description: "Cute Tones.",
+            link: "https://moondroplab.com/cn/products/quark2",
+        },
+        {
+            name: "Joker",
+            image: "/images/device/Joker.jpg",
+            specs: "50mm 动圈单元",
+            description: "True to Source.",
+            link: "https://moondroplab.com/cn/products/joker",
+        },
+        {
+            name: "Edge",
+            image: "/images/device/Edge.jpg",
+            specs: "40mm 动圈单元",
+            description: "To the Edge.",
+            link: "https://moondroplab.com/cn/products/edge",
+        },
+    ]
 };
