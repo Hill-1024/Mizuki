@@ -31,7 +31,13 @@ const diaryData: DiaryItem[] = [
         content: "小冷的天气",
         date: "2025-11-20T10:37:00Z",
         images: ["/images/diary/cold.jpg"],
-    }
+    },
+    {
+        id: 4,
+        content: "acm新生选拔赛决赛快到了,好紧张",
+        date: "2025-11-26T15:02:00Z",
+        images: ["/images/diary/sakura.jpg"],
+    },
 ];
 /*
 
