@@ -1,6 +1,7 @@
 ---
 title: The Write Up of ADCTF 2025
 published: 2025-11-28T04:40:26.381Z
+image: "./cover.png"
 tags: [WriteUp]
 category: WriteUp
 draft: false
