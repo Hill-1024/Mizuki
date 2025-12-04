@@ -54,11 +54,11 @@ export const devicesData: DeviceCategory = {
     ],
     MOONDROP: [
         {
-            name: "Qurak2 MuseDash",
-            image: "/images/device/Quark2.avif",
-            specs: "7.8mm 动圈单元",
-            description: "Cute Tones.",
-            link: "https://moondroplab.com/cn/products/quark2",
+            name: "Kadenz",
+            image: "/images/device/Kadenz.jpg",
+            specs: "10mm 动圈单元",
+            description: "Tuned to Move",
+            link: "https://moondroplab.com/cn/products/kadenz",
         },
         {
             name: "Joker",
@@ -73,6 +73,13 @@ export const devicesData: DeviceCategory = {
             specs: "40mm 动圈单元",
             description: "To the Edge.",
             link: "https://moondroplab.com/cn/products/edge",
+        },
+        {
+            name: "Qurak2 MuseDash",
+            image: "/images/device/Quark2.avif",
+            specs: "7.8mm 动圈单元",
+            description: "Cute Tones.",
+            link: "https://moondroplab.com/cn/products/quark2",
         },
     ]
 };
