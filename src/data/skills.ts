@@ -20,12 +20,6 @@ export interface Skill {
 export const skillsData: Skill[] = [
     // Frontend Skills
 
-
-
-
-
-
-
     {
         id: "astro",
         name: "Astro",
@@ -36,7 +30,7 @@ export const skillsData: Skill[] = [
         level: "beginner",
         experience: { years: 0, months: 1 },
         projects: [],
-        color: "#FF5D01",
+        color: "#d001ff",
     },
 
     // Backend Skills
@@ -86,7 +80,7 @@ export const skillsData: Skill[] = [
         level: "beginner",
         experience: { years: 0, months: 2 },
         projects: [],
-        color: "#FF5D01",
+        color: "#46514f",
     },
 
     // Database Skills
@@ -169,8 +163,19 @@ export const skillsData: Skill[] = [
         level: "beginner",
         experience: { years: 0, months: 2 },
         projects: [],
-        color: "#FF5D01",
+        color: "#a88d81",
     },
+    {
+        id: "androidStudio",
+        name: "AndroidStudio",
+        description: "",
+        icon: "skill-icons:androidstudio-dark",
+        category: "tools",
+        level: "beginner",
+        experience: { years: 0, months: 1 },
+        projects: [],
+        color: "#3ddc84",
+    }
     // Other Skills
 ];
 
